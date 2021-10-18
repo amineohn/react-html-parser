@@ -65,7 +65,7 @@
     "karma-spec-reporter": "^0.0.32",
     "karma-webpack": "^5.0.0",
     "phantomjs-prebuilt": "^2.1.7",
-    "react": "^16.0.0",
+    "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
     "webpack": "^5.58.2"
