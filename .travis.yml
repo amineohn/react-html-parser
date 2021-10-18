@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - 8
+
+env:
+  - REACT_VERSION=16
+  - REACT_VERSION=15
+
+script:
+  - npm run lint
+  - npm test
+
+before_script:
+  - npm install react@$REACT_VERSION react-dom@$REACT_VERSION
+
+after_script:
+  - "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"  # Send coverage data to Coveralls
